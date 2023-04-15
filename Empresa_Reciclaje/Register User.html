@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Usuario</title>
+    <link rel="stylesheet" href="Formulario User/Styles.css">
+</head>
+<body>
+    <div class="Container">
+        <form action="" class="form" id="form" autocomplete="off">
+            <p class="form-titulo">Registro de usuario</p>
+            <div class="form-input myname">
+                <input type="text" id="myname">
+                <label for="myname">Nombre</label>
+                <p class="mensajeError"></p>
+            </div>  
+            <div class="form-input surname">
+              <input type="text" id="surname">
+              <label for="surname">Apellidos</label>
+              <p class="mensajeError"></p>
+            </div>
+            <div class="form-input email">
+                <input type="email" id="email">
+                <label for="email">Correo electrónico</label>
+                <p class="mensajeError"></p>
+              </div>
+              <div class="form-input fechanacimineto">
+                <input type="date" id="fechanacimineto">
+                <label for="mobile">Fecha de Nacimineto</label>
+                <p class="mensajeError"></p>
+              </div>
+              <div class="form-input password">
+                <input type="password" id="password">
+                <label for="password">Contraseña</label>
+                <p class="mensajeError"></p>
+              </div>
+              <div class="form-input repeatPassword">
+                <input type="password" id="repeatPassword">
+                <label for="repeatPassword">Repetir Contraseña</label>
+                <p class="mensajeError"></p>
+              </div>
+              <div class="form-termsAndConditions termsAndConditions">
+                <input type="checkbox" id="termsAndConditions">
+                <label for="termsAndConditions">He leído y acepto los </label>
+                <a href="#">Términos y Condiciones</a>
+                <p class="mensajeError"></p>
+              </div>
+              <div class="form-boton" >
+                <input type="submit" value="Registrar">
+              </div>
+              <p class="mensajeCorrecto"></p>
+            </form>
+          </div>  
+
+          <script src="Formulario User/Script.js"></script> 
+        </form>        
+    </div>
+    
+</body>
+</html>

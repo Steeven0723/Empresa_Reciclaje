@@ -1,0 +1,143 @@
+/* Registrar*/
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    background: var(--cfondo);
+    font-family: sans-serif;
+    
+  }
+  
+  .container {
+    max-width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    
+  }
+  
+  :root {
+    --cfondo: rgb(207, 211, 212);
+    --cfondoForm1: rgba(1, 80, 88, 0.39);
+    --cfondoForm2: rgb(97, 203, 140);
+    --cfondoForm3: rgb(244, 252, 0);
+    --cnegro: black;
+    --ctexto: rgb(14, 71, 88);
+    --ctextoDark: rgb(1, 35, 39);
+    --cblanco: white;
+    --error: rgb(184, 31, 31);
+  }
+  
+  [type="checkbox"] {
+    display: none;
+  }
+  
+  [type="checkbox"]:checked + label::before {
+    background: var(--cnegro);
+    transition: 0.5s;
+    transform: rotate(180deg);
+  }
+  
+  [type="checkbox"]:checked + label {
+    color: var(--cnegro);
+  }
+  
+  /* ---- FORMULARIO ---- */
+  
+  .form {
+    /* border: 3px solid green; */
+
+    border-top: 2px solid var(--cnegro);
+    max-width: 400px;
+    padding: 5px 50px;
+    margin: auto;
+    margin-top: 40px;
+    background: linear-gradient(
+      200deg,
+      var(--cfondoForm1) 10%,
+      var(--cfondoForm2) 50%,
+      var(--cfondoForm3) 90%
+    );
+  }
+  
+  .form-titulo {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+  }
+  
+  .form-input {
+    height: 70px;
+    margin-bottom: 10px;
+  }
+  
+  .form-input label {
+    display: block;
+    margin-top: 10px;
+    font-size: 15px;
+    color: var(--ctexto);
+  }
+  
+  .form-input input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid var(--ctexto);
+  }
+  
+  .form-input input:focus + label {
+    font-weight: bold;
+    color: var(--cnegro);
+  }
+  
+  .form-termsAndConditions {
+    margin-left: 15px;
+    position: relative;
+    color: var(--ctexto);
+    font-size: 13px;
+  }
+  
+  .form-termsAndConditions label::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border: 1px solid var(--cnegro);
+    position: absolute;
+    left: -14px;
+  }
+  
+  .form-boton input {
+    background: var(--cnegro);
+    color: var(--cblanco);
+    padding: 10px 50px;
+    font-size: 25px;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    border: none;
+  }
+  
+  .form-boton input:hover {
+    background: var(--ctextoDark);
+    transition: 0.5s;
+  }
+  
+  .mensajeError {
+    color: var(--error);
+    margin-top: 0px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .mensajeCorrecto {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  
